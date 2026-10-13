@@ -1,0 +1,18 @@
+{
+  "schema": 2,
+  "program": "build-record",
+  "python_package": "zog.build_record",
+  "version": "0.8.2",
+  "scripts": {
+    "build-record": "zog.build_record.cli:main"
+  },
+  "component_dependencies": [],
+  "external_dependencies": [],
+  "package_data": [],
+  "license_notice_paths": [
+    "LICENSE",
+    "LICENSES/BSD-3-Clause.txt",
+    "LICENSES/GPL-3.0-only.txt",
+    "THIRD-PARTY-NOTICES.md"
+  ]
+}

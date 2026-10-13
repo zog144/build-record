@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# Development-install metadata only. Public Python publication is the aggregate "zog"
+# distribution assembled by release-build; do not publish this repository separately.
+name = "build-record"
+version = "0.8.2"
+description = "Immutable build provenance records for the Zog project"
+requires-python = ">=3.10"
+license = "BSD-3-Clause OR GPL-3.0-only"
+license-files = ["LICENSE", "LICENSES/*.txt", "THIRD-PARTY-NOTICES.md"]
+
+[project.scripts]
+build-record = "zog.build_record.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["zog.build_record"]
